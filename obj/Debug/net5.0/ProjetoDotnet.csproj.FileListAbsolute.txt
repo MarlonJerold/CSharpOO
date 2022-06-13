@@ -1,0 +1,16 @@
+C:\Users\marlon.martins\Documents\ProjetoDotnet\obj\Debug\net5.0\ProjetoDotnet.csproj.AssemblyReference.cache
+C:\Users\marlon.martins\Documents\ProjetoDotnet\obj\Debug\net5.0\ProjetoDotnet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marlon.martins\Documents\ProjetoDotnet\obj\Debug\net5.0\ProjetoDotnet.AssemblyInfoInputs.cache
+C:\Users\marlon.martins\Documents\ProjetoDotnet\obj\Debug\net5.0\ProjetoDotnet.AssemblyInfo.cs
+C:\Users\marlon.martins\Documents\ProjetoDotnet\obj\Debug\net5.0\ProjetoDotnet.csproj.CoreCompileInputs.cache
+C:\Users\marlon.martins\Documents\ProjetoDotnet\bin\Debug\net5.0\ProjetoDotnet.exe
+C:\Users\marlon.martins\Documents\ProjetoDotnet\bin\Debug\net5.0\ProjetoDotnet.deps.json
+C:\Users\marlon.martins\Documents\ProjetoDotnet\bin\Debug\net5.0\ProjetoDotnet.runtimeconfig.json
+C:\Users\marlon.martins\Documents\ProjetoDotnet\bin\Debug\net5.0\ProjetoDotnet.runtimeconfig.dev.json
+C:\Users\marlon.martins\Documents\ProjetoDotnet\bin\Debug\net5.0\ProjetoDotnet.dll
+C:\Users\marlon.martins\Documents\ProjetoDotnet\bin\Debug\net5.0\ref\ProjetoDotnet.dll
+C:\Users\marlon.martins\Documents\ProjetoDotnet\bin\Debug\net5.0\ProjetoDotnet.pdb
+C:\Users\marlon.martins\Documents\ProjetoDotnet\obj\Debug\net5.0\ProjetoDotnet.dll
+C:\Users\marlon.martins\Documents\ProjetoDotnet\obj\Debug\net5.0\ref\ProjetoDotnet.dll
+C:\Users\marlon.martins\Documents\ProjetoDotnet\obj\Debug\net5.0\ProjetoDotnet.pdb
+C:\Users\marlon.martins\Documents\ProjetoDotnet\obj\Debug\net5.0\ProjetoDotnet.genruntimeconfig.cache
