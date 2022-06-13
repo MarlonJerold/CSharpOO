@@ -42,7 +42,7 @@ namespace ProjetoDotnet
 
         static void Main(string[] args)
         {
-            return 0;
+            return 1;
         }
     }
 }
