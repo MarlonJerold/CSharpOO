@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
 
 namespace ProjetoDotnet
 {
@@ -35,7 +37,22 @@ namespace ProjetoDotnet
             TrocaNome(nome, "Jerold");
             System.Console.WriteLine($"O novo nome é {nome}");
 
-           }                
+           }
+        static void Demo4(){
+            var pares = new int[]{0,2,4,6,8};
+
+            MudarParaImpar(pares);
+
+            System.Console.WriteLine($"Os impares = {string.Join(",", pares)}");
+        } 
+        static void Demo5() {
+            int[] numeros = new int[]{0,2,4,6,8};
+            System.Console.Write($"Digite um número que gostria de encontrar: ");
+            var numero = int.Parse(Console.ReadLine());
+            var idxEncontrado = EncontrarNumeros(numeros, numero);
+
+            System.Console.WriteLine($"o numero digitado é {idxEncontrado}");
+        }              
         static void TrocarNome(Pessoa p1, string NovoNome){
 
             p1.Nome = NovoNome;
@@ -60,15 +77,48 @@ namespace ProjetoDotnet
             }
 
         }
-
-        static void Main(string[] args)
+        static int EncontrarNumeros(int[] numeros, int numero){
+            for (int i = 0; i < numeros.Length; i++)
+            {
+                if(numeros[i] == numero)       
+                    return i;
+                
+            }
+            return -1;   
+        }
+        static bool EncontrarPessoa(List<Pessoa> pessoas, Pessoa pessoa ){
+            foreach (var item in pessoas)
+            {
+                if (item.Nome == pessoa.Nome)
+                {
+                    return true;
+                }               
+            }
+            return false;
+        }
+        
+        public static void Main(string[] args)
         {
-            var pares = new int[]{0,2,4,6,8};
+                List<Pessoa> pessoas = new List<Pessoa>(){
+                new Pessoa(){Nome = "Marlon"},
+                new Pessoa(){Nome = "Jerold"},
+                new Pessoa(){Nome = "Moura"},
+                new Pessoa(){Nome = "Martins"},
+            };
 
-            MudarParaImpar(pares);
+            System.Console.WriteLine($"Digite a pessoa que gostaria de localizar: ");
 
-            System.Console.WriteLine($"Os impares = {string.Join(",", pares)}");
+            var nome = Console.ReadLine();
 
+            var pessoa = new Pessoa(){Nome = nome};
+            var encontrado = EncontrarPessoa(pessoas, pessoa);
+            if (encontrado)
+            {
+                System.Console.WriteLine("PESSOA LOCALIZADA!");
+            }else
+            {
+                System.Console.WriteLine("PESSOA NAO LOCALIZADA!");
+            }
         }
     }
 }
