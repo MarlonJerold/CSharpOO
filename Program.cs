@@ -100,7 +100,7 @@ namespace ProjetoDotnet
         public static void Main(string[] args)
         {
                 List<Pessoa> pessoas = new List<Pessoa>(){
-                new Pessoa(){Nome = "Marlon"},
+                new Pessoa(){Nome = "Marlons"},
                 new Pessoa(){Nome = "Jerold"},
                 new Pessoa(){Nome = "Moura"},
                 new Pessoa(){Nome = "Martins"},
