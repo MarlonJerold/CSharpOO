@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using static System.Console;
+
 
 namespace ProjetoDotnet
 {
@@ -52,6 +54,28 @@ namespace ProjetoDotnet
             var idxEncontrado = EncontrarNumeros(numeros, numero);
 
             System.Console.WriteLine($"o numero digitado é {idxEncontrado}");
+        }
+        static void Demo6(){
+            List<Pessoa> pessoas = new List<Pessoa>(){
+            new Pessoa(){Nome = "Marlon"},
+            new Pessoa(){Nome = "Jerold"},
+            new Pessoa(){Nome = "Moura"},
+            new Pessoa(){Nome = "Martins"},
+            };
+
+            System.Console.WriteLine($"Digite a pessoa que gostaria de localizar: ");
+
+            var nome = Console.ReadLine();
+
+            var pessoa = new Pessoa(){Nome = nome};
+            var encontrado = EncontrarPessoa(pessoas, pessoa);
+            if (encontrado)
+            {
+                System.Console.WriteLine("PESSOA LOCALIZADA!");
+            }else
+            {
+                System.Console.WriteLine("PESSOA NAO LOCALIZADA!");
+            }           
         }              
         static void TrocarNome(Pessoa p1, string NovoNome){
 
@@ -96,29 +120,29 @@ namespace ProjetoDotnet
             }
             return false;
         }
-        
+        static void AlterarNomes(string[] Nomes, string Nome, string NomeNovo){
+            for (int i = 0; i < Nomes.Length; i++)
+            {
+                if (Nomes[i] == Nome )
+                {
+                    Nomes[i] = NomeNovo;
+                }
+            }
+        }
         public static void Main(string[] args)
         {
-                List<Pessoa> pessoas = new List<Pessoa>(){
-                new Pessoa(){Nome = "Marlon"},
-                new Pessoa(){Nome = "Jerold"},
-                new Pessoa(){Nome = "Moura"},
-                new Pessoa(){Nome = "Martins"},
-            };
-
-            System.Console.WriteLine($"Digite a pessoa que gostaria de localizar: ");
-
-            var nome = Console.ReadLine();
-
-            var pessoa = new Pessoa(){Nome = nome};
-            var encontrado = EncontrarPessoa(pessoas, pessoa);
-            if (encontrado)
-            {
-                System.Console.WriteLine("PESSOA LOCALIZADA!");
-            }else
-            {
-                System.Console.WriteLine("PESSOA NAO LOCALIZADA!");
-            }
+            var Nomes = new string[]{"José", "Maria", "Ricardo", "Alice"};
+            WriteLine($@"A lista de nomes é: 
+            {string.Join(",\n", Nomes)}
+            ");
+            WriteLine($"Digite um nome a ser substituido: ");
+            var Nome = ReadLine();
+            WriteLine($"Digite o novo nome: ");
+            var NomeNovo = ReadLine();
+            AlterarNomes(Nomes, Nome, NomeNovo);
+            WriteLine($@"A lista de nomes alterada: 
+            {string.Join(",\n", Nomes)}
+            ");
         }
     }
 }
